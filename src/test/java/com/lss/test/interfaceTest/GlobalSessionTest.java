@@ -9,7 +9,7 @@ public class GlobalSessionTest extends BaseTest {
 	@BeforeClass
 	public void before() {
 		super.before();
-		this.session = login("14700000030", "666666");
+		this.session = login("14700000030", "666666","86");
 	}
 	
 	public String sign(Object params) {

@@ -19,13 +19,13 @@ public class BaseTest {
 		given().log().all();
 	}
 
-	public String login(String username,String password) {
+	public String login(String username,String password,String region_code) {
 		// 对密码进行加密
 		String md5Pwd = DigestUtils.md5Hex(password);
 		LoginParams loginparam = new LoginParams();
 		loginparam.password = md5Pwd;
 		loginparam.user_name = username;
-		loginparam.region_code = "86";
+		loginparam.region_code = region_code;
 
 		Response response = given().log()
 			.all().

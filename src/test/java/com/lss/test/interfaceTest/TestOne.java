@@ -26,7 +26,9 @@ public class TestOne {
 		.then()
 			.log().all()
 			.statusCode(200)
-			.body("error_description",equalTo("用户名或密码错误"));		
+			.body("error_description",equalTo("用户名或密码错误"));
+			
+			
 					
 	}
 	
