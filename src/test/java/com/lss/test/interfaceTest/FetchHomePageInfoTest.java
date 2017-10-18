@@ -23,13 +23,12 @@ public class FetchHomePageInfoTest extends GlobalSessionTest {
 			
 		Response response=	
 		given()
-			.log()
-			.all()
-		.when()
+			.log().all()
 			.header("QUARTZ-SESSION",session)
 			.header("SIGN",sign(session)) 
 			.header("Content-type"," application/json")
 			.header("Accept","application/json")//返回的结果的content-type设置为json
+		.when()			
 			.post("http://shitouji.bluestonehk.com:6064/fund/base/fetchHomePageInfo")
 		.then()
 			.log().all()
