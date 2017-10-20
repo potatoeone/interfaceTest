@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3039" started-at="2017-10-18T09:52:59Z" finished-at="2017-10-18T09:53:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3039" started-at="2017-10-18T09:52:59Z" finished-at="2017-10-18T09:53:02Z">
+      <class name="com.lss.test.interfaceTest.FetchHomePageInfoTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.lss.test.interfaceTest.FetchHomePageInfoTest@5e5792a0]" name="before" is-config="true" duration-ms="2146" started-at="2017-10-18T17:52:59Z" finished-at="2017-10-18T17:53:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="fetchHomePageInfo()[pri:0, instance:com.lss.test.interfaceTest.FetchHomePageInfoTest@5e5792a0]" name="fetchHomePageInfo" duration-ms="860" started-at="2017-10-18T17:53:01Z" finished-at="2017-10-18T17:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchHomePageInfo -->
+      </class> <!-- com.lss.test.interfaceTest.FetchHomePageInfoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
