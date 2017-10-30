@@ -1,5 +1,4 @@
 package com.lss.test.interfaceTest;
-import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
