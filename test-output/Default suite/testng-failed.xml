@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.lss.test.interfaceTest.FetchHomePageInfoTest">
+      <class name="com.lss.test.interfaceTest.FetchRecommendListTest">
         <methods>
-          <include name="fetchHomePageInfo"/>
+          <include name="fetchRecommendList"/>
           <include name="before"/>
         </methods>
-      </class> <!-- com.lss.test.interfaceTest.FetchHomePageInfoTest -->
+      </class> <!-- com.lss.test.interfaceTest.FetchRecommendListTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

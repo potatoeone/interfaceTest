@@ -1,17 +1,16 @@
 package com.lss.test.interfaceTest;
+import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
-import io.restassured.*;
-import io.restassured.response.Response;
+import static org.hamcrest.Matchers.*;
 
-import static org.hamcrest.Matcher.*;
 
 public class FetchRecommendListTest extends GlobalSessionTest{
 	
 	@Test
 	public void fetchRecommendList() {
-		Response response=given()
+		given()
 			.log().all()
 			.header("QUARTZ-SESSION",session)
 			.header("SIGN",sign(session)) 
@@ -22,10 +21,15 @@ public class FetchRecommendListTest extends GlobalSessionTest{
 		.then()
 			.log().all()
 			.statusCode(200)
-			.extract()
-			.response();
+			.body("errno",equalTo(0));//在json中拿到key为errno的值， 是否与0相等。
+
+		
+
+		//FetchRecommendListParam result = response.as(FetchRecommendListParam.class);
+		//断言errno这个字符串是否等于0
+		//assertEquals("errno", "0");
+		
+	
 	}
 	
-
-
 }
