@@ -15,14 +15,14 @@ public class FetchUserPositionListResponParam {
 		}
 		
 		public class PositionList{
-			   public int balanceId;
-			   public String currency;
-			   public String fundId;
-			   public String fundChShortName;
-			   public String mktVal;
-			   public Date lastedProfitDate;
-			   public double lastedProfit;
-			   public double accumulateProfit;
+			   public int balanceId;	//余额id
+			   public String currency; 	// 币种（HKD - 港币（默认），USD - 美元）
+			   public String fundId;   	//基金id
+			   public String fundChShortName;  //基金名称
+			   public String mktVal;	//	持仓市值
+			   public Date lastedProfitDate;	//最新收益日期
+			   public double lastedProfit;		//最新收益
+			   public double accumulateProfit;	//累计收益
 		}
 }
 

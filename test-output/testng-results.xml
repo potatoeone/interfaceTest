@@ -2,27 +2,67 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2129" started-at="2017-10-30T08:58:40Z" finished-at="2017-10-30T08:58:42Z">
+  <suite name="Default suite" duration-ms="2549" started-at="2017-10-31T08:31:37Z" finished-at="2017-10-31T08:31:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2129" started-at="2017-10-30T08:58:40Z" finished-at="2017-10-30T08:58:42Z">
-      <class name="com.lss.test.interfaceTest.FetchRecommendListTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:com.lss.test.interfaceTest.FetchRecommendListTest@5e5792a0]" name="before" is-config="true" duration-ms="1952" started-at="2017-10-30T16:58:40Z" finished-at="2017-10-30T16:58:42Z">
+    <test name="Default test" duration-ms="2549" started-at="2017-10-31T08:31:37Z" finished-at="2017-10-31T08:31:40Z">
+      <class name="com.lss.test.interfaceTest.FetchUserPositionListTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.lss.test.interfaceTest.FetchUserPositionListTest@5e5792a0]" name="before" is-config="true" duration-ms="2058" started-at="2017-10-31T16:31:37Z" finished-at="2017-10-31T16:31:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="FAIL" signature="fetchRecommendList()[pri:0, instance:com.lss.test.interfaceTest.FetchRecommendListTest@5e5792a0]" name="fetchRecommendList" duration-ms="162" started-at="2017-10-30T16:58:42Z" finished-at="2017-10-30T16:58:42Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="fetchUserPositionList()[pri:0, instance:com.lss.test.interfaceTest.FetchUserPositionListTest@5e5792a0]" name="fetchUserPositionList" duration-ms="475" started-at="2017-10-31T16:31:39Z" finished-at="2017-10-31T16:31:40Z">
+          <exception class="com.fasterxml.jackson.databind.JsonMappingException">
             <message>
-              <![CDATA[expected [0] but found [errno]]]>
+              <![CDATA[No suitable constructor found for type [simple type, class com.lss.test.interfaceTest.FetchUserPositionListResponParam$PositionList]: can not instantiate from JSON object (missing default constructor or creator, or perhaps need to add/enable type information?)
+ at [Source: {"body":{"positionList":[{"accumulateProfit":0.00,"availableUnits":"","balanceId":18,"costAmount":50000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":49950.04,"lastedProfit":"","lastedProfitDate":null,"mktVal":49999.99,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":0.00,"availableUnits":"","balanceId":19,"costAmount":6600.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":6593.40,"lastedProfit":"","lastedProfitDate":null,"mktVal":6599.99,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":0.00,"availableUnits":"","balanceId":20,"costAmount":50000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":49950.04,"lastedProfit":"","lastedProfitDate":null,"mktVal":49999.99,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":504.52,"availableUnits":"","balanceId":15,"costAmount":50000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":6566.08,"lastedProfit":504.54,"lastedProfitDate":"11-27","mktVal":6572.64,"navDate":null,"sellAmount":43931.88,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":857.71,"availableUnits":"","balanceId":16,"costAmount":85000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":85771.94,"lastedProfit":857.71,"lastedProfitDate":"11-27","mktVal":85857.71,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":11.08,"availableUnits":"","balanceId":12,"costAmount":1100.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":1109.98,"lastedProfit":11.09,"lastedProfitDate":"11-27","mktVal":1111.08,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":10.08,"availableUnits":"","balanceId":13,"costAmount":1000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":209.08,"lastedProfit":10.09,"lastedProfitDate":"11-27","mktVal":209.28,"navDate":null,"sellAmount":800.80,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":12.10,"availableUnits":"","balanceId":14,"costAmount":1200.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":1210.89,"lastedProfit":12.10,"lastedProfitDate":"11-27","mktVal":1212.10,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010}]},"errno":0,"message":"请求成功"}; line: 1, column: 27] (through reference chain: com.lss.test.interfaceTest.FetchUserPositionListResponParam["body"]->com.lss.test.interfaceTest.Body["positionList"]->java.util.ArrayList[0])]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [0] but found [errno]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at com.lss.test.interfaceTest.FetchRecommendListTest.fetchRecommendList(FetchRecommendListTest.java:29)
+              <![CDATA[com.fasterxml.jackson.databind.JsonMappingException: No suitable constructor found for type [simple type, class com.lss.test.interfaceTest.FetchUserPositionListResponParam$PositionList]: can not instantiate from JSON object (missing default constructor or creator, or perhaps need to add/enable type information?)
+ at [Source: {"body":{"positionList":[{"accumulateProfit":0.00,"availableUnits":"","balanceId":18,"costAmount":50000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":49950.04,"lastedProfit":"","lastedProfitDate":null,"mktVal":49999.99,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":0.00,"availableUnits":"","balanceId":19,"costAmount":6600.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":6593.40,"lastedProfit":"","lastedProfitDate":null,"mktVal":6599.99,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":0.00,"availableUnits":"","balanceId":20,"costAmount":50000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":49950.04,"lastedProfit":"","lastedProfitDate":null,"mktVal":49999.99,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":504.52,"availableUnits":"","balanceId":15,"costAmount":50000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":6566.08,"lastedProfit":504.54,"lastedProfitDate":"11-27","mktVal":6572.64,"navDate":null,"sellAmount":43931.88,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":857.71,"availableUnits":"","balanceId":16,"costAmount":85000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":85771.94,"lastedProfit":857.71,"lastedProfitDate":"11-27","mktVal":85857.71,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":11.08,"availableUnits":"","balanceId":12,"costAmount":1100.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":1109.98,"lastedProfit":11.09,"lastedProfitDate":"11-27","mktVal":1111.08,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":10.08,"availableUnits":"","balanceId":13,"costAmount":1000.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":209.08,"lastedProfit":10.09,"lastedProfitDate":"11-27","mktVal":209.28,"navDate":null,"sellAmount":800.80,"unconfirmedAmount":0.00,"unitNav":1.0010},{"accumulateProfit":12.10,"availableUnits":"","balanceId":14,"costAmount":1200.00,"currency":"USD","divAmount":0.00,"frozenUnits":"","fundChShortName":"美元高收益","fundId":3,"holdUnits":1210.89,"lastedProfit":12.10,"lastedProfitDate":"11-27","mktVal":1212.10,"navDate":null,"sellAmount":0.00,"unconfirmedAmount":0.00,"unitNav":1.0010}]},"errno":0,"message":"请求成功"}; line: 1, column: 27] (through reference chain: com.lss.test.interfaceTest.FetchUserPositionListResponParam["body"]->com.lss.test.interfaceTest.Body["positionList"]->java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:148)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1080)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:295)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:142)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:240)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:212)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:25)
+	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:523)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:101)
+	at com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap.findDeserializeAndSet(BeanPropertyMap.java:285)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:220)
+	at com.fasterxml.jackson.databind.deser.impl.InnerClassProperty.deserializeAndSet(InnerClassProperty.java:119)
+	at com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap.findDeserializeAndSet(BeanPropertyMap.java:285)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:248)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:136)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3562)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2616)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:45)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:202)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:55)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:222)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:164)
+	at com.lss.test.interfaceTest.FetchUserPositionListTest.fetchUserPositionList(FetchUserPositionListTest.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -49,11 +89,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- com.fasterxml.jackson.databind.JsonMappingException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fetchRecommendList -->
-      </class> <!-- com.lss.test.interfaceTest.FetchRecommendListTest -->
+        </test-method> <!-- fetchUserPositionList -->
+      </class> <!-- com.lss.test.interfaceTest.FetchUserPositionListTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
