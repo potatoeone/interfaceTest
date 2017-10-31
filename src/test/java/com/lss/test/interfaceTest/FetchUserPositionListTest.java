@@ -44,6 +44,7 @@ public class FetchUserPositionListTest extends GlobalSessionTest {
 				positionLists = positionList.get(i);
 
 				if (balance.containsKey(positionLists.balanceId)) {
+				
 					System.out.println("有重复持仓记录；");
 				} else {
 					balance.put(positionLists.balanceId, positionLists);
