@@ -3,6 +3,7 @@ package com.lss.test.interfaceTest;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matcher.*;
 import static org.hamcrest.Matchers.*;
+import static org.testng.Assert.assertTrue;
 
 import java.util.HashMap;
 import java.util.List;
@@ -53,6 +54,8 @@ public class FetchUserPositionListTest extends GlobalSessionTest {
 			}
 		}
 		System.out.println("=====>" + balance);
+		assertTrue(!balance.containsKey(positionLists.balanceId));
+		
 
 	}
 
